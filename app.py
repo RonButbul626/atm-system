@@ -50,4 +50,4 @@ def deposit(account_number):
     return jsonify({'message': 'Deposit successful', 'balance': accounts[account_number]['balance']})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host = '0.0.0.0', port=5000)

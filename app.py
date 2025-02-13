@@ -4,9 +4,20 @@ app = Flask(__name__)
 
 # In-memory data storage (dictionary)
 accounts = {
-    '123456': {'balance': 1000},
-    '654321': {'balance': 500},
+    '873214': {'balance': 1250},
+    '452198': {'balance': 340},
+    '367591': {'balance': 2300},
+    '129874': {'balance': 180},
+    '984321': {'balance': 950},
+    '236547': {'balance': 1560},
+    '573829': {'balance': 780},
+    '648213': {'balance': 2150},
+    '319875': {'balance': 430},
+    '785412': {'balance': 3200},
+    '453291': {'balance': 890},
+    '612984': {'balance': 1100}
 }
+
 
 @app.route('/accounts/<account_number>/balance', methods=['GET'])
 def get_balance(account_number):
